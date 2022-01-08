@@ -89,11 +89,24 @@ article img{
     filter: grayscale(80%);
     transition: transform .5s;
 }
+@keyframes imgborder {
+    0% {
+    border-radius: 100%;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 0%;
+    }
+
+}
 article img:hover{
     filter: none;
     transform: scale(1.2);
-    
-
+    animation-name: imgborder;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
 }
 article p{
 text-align: center;
