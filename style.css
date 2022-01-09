@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: Rakkas;
-    src: url(Rakkas/Rakkas-Regular.ttf);
+    src: url(Rakkas-Regular.ttf);
 }
 #tartalom{
     width: 95%;
@@ -75,7 +75,7 @@ a:hover{
     color: white;
 }
 body{
-background-image: url(pic/pexels-daniel-frank-688830.jpg);
+background-image: url(pexels-daniel-frank-688830.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 }
