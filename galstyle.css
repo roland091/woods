@@ -12,6 +12,7 @@
     flex: 23%;
     max-width: 25%;
     margin: 5px;
+    
 }
 .oszlop img{
     position: relative;
@@ -20,6 +21,27 @@
     box-shadow: 6px 6px 37px 0px rgba(0,0,0,0.75);
     transform: scale(1.0);
     transition: .7s;
+    
+}
+#oszlop1{
+    animation: opening 1s 2s both;
+}
+#oszlop2{
+    animation: opening 1s 2.5s both;
+}
+#oszlop3{
+    animation: opening 1s 3s both;
+}
+#oszlop4{
+    animation: opening 1s 3.5s both;
+}
+@keyframes opening {
+    0% {
+        opacity: 0;
+    }   
+    100% {
+        opacity: 1;
+    } 
 }
 
 .oszlop img:hover{
