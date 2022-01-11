@@ -1,0 +1,48 @@
+/* GALÉRIA CSS */
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.oszlop{
+    flex: 23%;
+    max-width: 25%;
+    margin: 5px;
+}
+.oszlop img{
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+    box-shadow: 6px 6px 37px 0px rgba(0,0,0,0.75);
+    transform: scale(1.0);
+    transition: .7s;
+}
+
+.oszlop img:hover{
+    z-index: 100;
+    transform: scale(1.1);
+    transition: .7s;
+    
+}
+/* RESZPONZIVITÁS */
+@media (max-width: 800px) {
+    .oszlop {
+      flex: 48%;
+      max-width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .oszlop {
+      flex: 100%;
+      max-width: 100%;
+    
+    }
+    .oszlop img:hover{
+        z-index: 100;
+        transform: scale(1.0);
+    }
+}
