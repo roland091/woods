@@ -6,49 +6,24 @@
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    
 }
 .oszlop{
     flex: 23%;
     max-width: 25%;
     margin: 5px;
-    
 }
 .oszlop img{
-    position: relative;
     width: 100%;
     margin-top: 8px;
     box-shadow: 6px 6px 37px 0px rgba(0,0,0,0.75);
     transform: scale(1.0);
-    transition: .7s;
-    
+    transition: .7s;  
 }
-#oszlop1{
-    animation: opening 1s 2s both;
-}
-#oszlop2{
-    animation: opening 1s 2.5s both;
-}
-#oszlop3{
-    animation: opening 1s 3s both;
-}
-#oszlop4{
-    animation: opening 1s 3.5s both;
-}
-@keyframes opening {
-    0% {
-        opacity: 0;
-    }   
-    100% {
-        opacity: 1;
-    } 
-}
-
 .oszlop img:hover{
-    z-index: 100;
+    position: relative;
+    z-index: 1;
     transform: scale(1.1);
     transition: .7s;
-    
 }
 /* RESZPONZIVITÁS */
 @media (max-width: 800px) {
@@ -61,7 +36,6 @@
     .oszlop {
       flex: 100%;
       max-width: 100%;
-    
     }
     .oszlop img:hover{
         z-index: 100;
